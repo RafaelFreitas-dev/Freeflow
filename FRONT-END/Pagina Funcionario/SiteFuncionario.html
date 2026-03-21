@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MODELO EM HTML</title>
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="style1.css" />
+    <!--BootStrap Css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!--BootStrap Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/475285a6f6.js" crossorigin="anonymous"></script>
+    <!--Progress Bar-->
+    <script src="progressbar.min.js"></script>
+    <!--Query-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Parallax-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <a class="navbar-brand" href="#"><img id="logo" src="/Projeto-Tech-Sidel-part-2--main/img-carousel/Logo-Tecsidel1.png"
+                        alt="Logo Free-flow">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-item nav-link" id="home-menu">Home</a>
+                        <a href="#" class="nav-item nav-link" id="cameras-menu">Cameras</a>
+                        <a href="#" class="nav-item nav-link" id="pagamentos-menu">Pagamentos</a>
+                        <a href="#" class="nav-item nav-link" id="contact-menu">Contatos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#mainSlider" data-bs-slide-to="1"></li>
+                <li data-bs-target="#mainSlider" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="container-fluid carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6 apply-box" id="company-img"></div>
+                        <div class="col-md-6 apply-box2" id="pattern-img">
+                            <h2>Funcionalidades</h2>
+                            <ul>
+                                <li>câmeras ANPR: <span class="status ativo">Ativo</span></li>
+                                <li>tag RFID: <span class="status ativo">Ativo</span></li>
+                                <li>câmeras de visão geral: <span class="status ativo">Ativo</span></li>
+                                <li>sistemas de processamento de dados: <span class="status ativo">Ativo</span></li>
+                                <li>infraestrutura de comunicação: <span class="status ativo">Ativo</span></li>
+                            </ul>
+                            <a href="#" class="main-btn">Verificar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 apply-box" id="company-img2"></div>
+                        <div class="col-md-6 apply-box2" id="pattern-img">
+                            <h2>Funcionalidades</h2>
+                            <ul>
+                                <li>câmeras ANPR: <span class="status ativo">Ativo</span></li>
+                                <li>tag RFID: <span class="status ativo">Ativo</span></li>
+                                <li>câmeras de visão geral: <span class="status offline">Offline</span></li>
+                                <li>sistemas de processamento de dados: <span class="status ativo">Ativo</span></li>
+                                <li>infraestrutura de comunicação: <span class="status ativo">Ativo</span></li>
+                            </ul>
+                            <a href="#" class="main-btn">Verificar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 apply-box" id="company-img3"></div>
+                        <div class="col-md-6 apply-box2" id="pattern-img">
+                            <h2>Funcionalidades</h2>
+                            <ul>
+                                <li>câmeras ANPR: <span class="status ativo">Ativo</span></li>
+                                <li>tag RFID: <span class="status ativo">Ativo</span></li>
+                                <li>câmeras de visão geral: <span class="status ativo">Ativo</span></li>
+                                <li>sistemas de processamento de dados: <span class="status ativo">Ativo</span></li>
+                                <li>infraestrutura de comunicação: <span class="status offline">Offlline</span></li>
+                            </ul>
+                            <a href="#" class="main-btn">Verificar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repita os blocos para os outros itens do carrossel -->
+            </div>
+            <a href="#mainSlider" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="srv-only">Anterior</span>
+            </a>
+            <a href="#mainSlider" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="srv-only">Próximo</span>
+            </a>
+        </div>
+        <!--Dados da empresa-->
+        <div id="dataCarousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#dataCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#dataCarousel" data-bs-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- Dados do Dia -->
+                <div class="carousel-item active">
+                    <div id="data-area">
+                        <h1>Dados - Dia</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 circle-box">
+                                    <div id="circleA"></div>
+                                    <p>Contagem de Carros</p>
+                                </div>
+                                <div class="col-md-3 circle-box">
+                                    <div id="circleB"></div>
+                                    <p>Pagamentos Realizados</p>
+                                </div>
+                                <div class="col-md-3 circle-box">
+                                    <div id="circleC"></div>
+                                    <p>Pagamentos Pendentes</p>
+                                </div>
+                                <div class="col-md-3 circle-box">
+                                    <div id="circleD"></div>
+                                    <p>Pagamentos Atrasados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dados da Hora -->
+                <div class="carousel-item">
+                    <div id="data-area-hourly">
+                        <h1>Dados - Hora</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 circle-box">
+                                    <div id="circuloA"></div>
+                                    <p>Contagem de Carros</p>
+                                </div>
+                                <div class="col-md-3 circle-box">
+                                    <div id="circuloB"></div>
+                                    <p>Pagamentos Realizados</p>
+                                </div>
+                                <div class="col-md-3 circle-box">
+                                    <div id="circuloC"></div>
+                                    <p>Pagamentos Pendentes</p>
+                                </div>
+                                <div class="col-md-3 circle-box">
+                                    <div id="circuloD"></div>
+                                    <p>Pagamentos Atrasados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#dataCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#dataCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+        
+    </main>
+    <section class="container">
+        <section class="card_container">
+            <div class="card_bx" style="--clr: #89ec5b">
+                <div class="card_data">
+                    <div class="card_icon"> 
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                    <div class="card_content">
+                        <h3>Pagos</h3>
+                        <p>Acompanhe os pagamentos</p>
+                        <a href="#">Verificar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card_bx" style="--clr: #FFC107">
+                <div class="card_data">
+                    <div class="card_icon"> 
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="card_content">
+                        <h3>Pendentes</h3>
+                        <p>Acompanhe as pendências</p>
+                        <a href="#">Verificar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card_bx" style="--clr: #ee1616">
+                <div class="card_data">
+                    <div class="card_icon"> 
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="card_content">
+                        <h3>Atrasos</h3>
+                        <p>Acompanhe os atrasos</p>
+                        <a href="#">Verificar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>    
+    <!--Rodapé-->
+    <footer>
+        <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="main-title">Suporte Interno</h2>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-title">Ligue para: </span> (11) 99999-9999</p>
+                        <p><span class="contact-title">Horários: </span> 08:00 - 19:00</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-title">Envie um e-mail: </span> suporte@tecsidel.com.br</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-title">Localização: </span> Av. Fagundes Filho, 141 - Vila Monte Alegre,
+                            São Paulo - SP, 04304-010</p>
+                    </div>
+                    <div class="col-md-6" id="msg-box">
+                        <p>Nos informe o problema que está ocorrendo</p>
+                        <img src="/Projeto-Tech-Sidel-part-2--main/img-carousel/conect.png" class="footer-img" alt="Imagem de uma figura do suporte">
+                    </div>
+                    <div class="col-md-6" id="contact-form">
+                        <form action="">
+                            <input type="email" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                            <textarea class="form-control" rows="3" placeholder="Sua Mensagem..."
+                                name="message"></textarea>
+                            <input type="submit" class="main-btn" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a
+                                href="https://www.linkedin.com/in/gabriel-ferraz-41a1b2175/">TecSidel</a>&copy;2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Link Js-->
+    <script src="./index.js"></script>
+</body>
+
+</html>
