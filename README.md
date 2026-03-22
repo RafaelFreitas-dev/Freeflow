@@ -1,3 +1,6 @@
+# Freeflow
+Projeto Free Flow destinado ao Trabalho de Aperfeiçoamento do 4 semestre de Desenvolvimento de Software Multiplataforma
+
 Pagina-Cadastro-Tech-sidel
 Este projeto é um formulário de inscrição básico com um design visualmente atraente. Os usuários podem inserir nome, e-mail, cidade, número de contato, senha e concordar com os termos e condições antes de se registrar. Eles também têm a opção de fazer login se já forem membros.
 
